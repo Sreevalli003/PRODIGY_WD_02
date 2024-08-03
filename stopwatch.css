@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.stopwatch {
+    background: #a8d0e6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 8px #ffffff;
+    text-align: center;
+    width: 300px;
+}
+
+#display {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+    padding: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#startBtn {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+#stopBtn {
+    background-color: #f0ad4e;
+    color: white;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+#resetBtn {
+    background-color: #d9534f;
+    color: white;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+.controls button:hover {
+    transform: translateY(-2px);
+}
+
+.controls button:active {
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+
+@media (max-width: 600px) {
+    .stopwatch {
+        width: 80%;
+    }
+
+    #display {
+        font-size: 1.5em;
+    }
+
+    .controls button {
+        padding: 10px;
+        margin: 5px;
+        font-size: 0.9em;
+    }
+}
